@@ -1,0 +1,59 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: 100vh;
+}
+
+.card-image {
+  height: 18rem;
+  width: 30rem;
+}
+
+.back-card {
+  /* transform: translate(180%, calc(-60vh)); */
+  position: absolute;
+  left: 22%;
+  top: 30%;
+}
+
+.front-card {
+  position: absolute;
+  left: 25%;
+  top: 55%;
+}
+
+@media (max-width: 500px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    height: 30vh;
+  }
+
+  .front-card {
+    right: 5%;
+    top: 2rem;
+  }
+
+  .back-card {
+    left: 5%;
+    top: 12rem;
+    z-index: 100;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .img {
+    width: 40rem;
+  }
+}

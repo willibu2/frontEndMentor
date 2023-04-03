@@ -1,0 +1,87 @@
+.card-information {
+  height: 18rem;
+  width: 30rem;
+  position: absolute;
+  left: 22%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  z-index: 1;
+
+  justify-content: space-between;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.first-circle {
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.second-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.card-number {
+  color: white;
+  font-size: 2.2rem;
+  letter-spacing: 1.4px;
+  word-spacing: 2px;
+  margin-top: 2rem;
+}
+
+.name-and-ccv-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.date {
+  font-size: 1.5rem;
+}
+
+.back-card {
+  position: relative;
+  height: 18rem;
+  width: 30rem;
+  position: absolute;
+  left: 25%;
+  top: 55%;
+}
+
+.ccv {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 7.6rem;
+  right: 4rem;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .card-information {
+    left: 5%;
+    top: 12rem;
+    z-index: 101;
+  }
+
+  .back-card {
+    right: 5%;
+    top: 2rem;
+  }
+}

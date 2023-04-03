@@ -1,0 +1,66 @@
+.form-container {
+  width: 30rem;
+  margin: 30rem auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  font-size: 1.4rem;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.form-container input {
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+
+  border-radius: 5px;
+  border: 1px darkblue solid;
+  padding: 1rem;
+}
+.form-container button {
+  width: 100%;
+  color: white;
+
+  font-size: 2rem;
+  padding: 1rem;
+
+  background-color: rgb(59, 59, 77);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.manji-inputi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.prvi-manji input {
+  width: 40%;
+  display: inline;
+  margin-right: 1rem;
+}
+.prvi-manji label {
+  display: block;
+  width: 100%;
+}
+
+.form-container p {
+  font-size: 1.8rem;
+  color: red;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 50em) {
+  .form-container {
+    margin: 10rem auto;
+  }
+}
