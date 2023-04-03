@@ -7,11 +7,11 @@ const ThankYou = () => {
 
   return (
     <div className={classes.main}>
-      <div>
+      {/* <div>
         <ion-icon name="checkmark-done-circle-outline"></ion-icon>
-      </div>
+      </div> */}
       <h1>THANK YOU!</h1>
-      <p>We've added your card details</p>
+      <p>We have added your card details</p>
       <button onClick={ctx.reset}>Continue</button>
     </div>
   );
